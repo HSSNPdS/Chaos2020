@@ -1,31 +1,91 @@
+/* COLORS */
 :root{
   --gray: #C4C4C4;
+  --black: #101010;
+  --text: #BEBEBE;
 }
 
+/* GLOBAL CONFIGURATION */
 *{
   margin: 0;
 
   font-family: 'VT323', monospace;
 
+  font-weight: 300;
   text-decoration: none;
   list-style: none;
 }
 
-.navbar{
+body{
+  background-color: var(--black);
+}
+
+main{
+  margin-left: 2px;
+}
+/* -------------------- */
+
+/* TOP HEAD NAVBAR */ 
+header{
   width: 100%;
-  height: 20%;
+  height: 15%;
 
   background-color: var(--gray);
 }
 
-.navbar-content{
+.navbar{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
-  margin: 20px 8px;
+  padding: 8px 8px;
 }
 
-.navbar-content img{
+.logo-text{
+  display: flex;
+  align-items: center;
+}
+
+.logo-text img{
   width: 55px;
   height: 55px;
 }
+
+.logo-text h1{
+  margin-left: 10px;
+
+  font-size: 50px;
+}
+
+.nav-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-buttons li{
+  margin-right: 30px;
+}
+/* -------------------- */
+
+/* TEXT CONTENT */
+.content h1, h2, h3, p{
+  margin: 10px 0;
+
+  color: var(--text);
+}
+
+.content p {
+  font-size: 25px;
+
+  max-width: 80%;
+}
+
+.content h3{
+  font-size: 35px;
+}
+/* -------------------- */
+
+/* BUTTONS */
+
+/* -------------------- */
